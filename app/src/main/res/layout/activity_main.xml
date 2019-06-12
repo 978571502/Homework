@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="Orientation"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/icon_fragment_bg">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="50dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/main_tv"/>
+
+    <EditText
+        android:id="@+id/main_et_username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textColorHint="#000"
+        android:paddingLeft="50dp"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:hint="请输入姓名"
+        android:layout_below="@id/main_tv"/>
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_below="@id/main_et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/icon_button"
+        android:text="@string/enter"
+        android:textSize="20sp" />
+
+</RelativeLayout>
